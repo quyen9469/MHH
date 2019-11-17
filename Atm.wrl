@@ -1,0 +1,181 @@
+#VRML V2.0 utf8
+
+Viewpoint
+{
+	position 0 3 10
+}
+#nền
+DEF	nen Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 15 0.02 15
+			}
+
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/6708238.jpg"]
+				}
+			}
+		}
+	]
+}
+
+# Tường phẳng các bên
+DEF	tuong Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 0.1 5 2.5
+			}
+			appearance Appearance
+			{
+					texture	ImageTexture
+				{
+					url	["image/nen_go.jpg"]
+				}
+			}
+		}
+	]
+	translation	-1.25 2.5 0
+}
+
+Transform
+{
+	  children
+	  [USE tuong]
+	  translation 2.5 0 0
+}
+#tuong sau
+Transform
+{
+	  children
+	  [USE tuong]
+	  rotation 0 1 0 1.575
+	  translation 0 0 -2.52
+	  scale	1.05 1 1
+}
+#tuong truoc duoi
+Transform
+{
+	children
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 2.5 2 0.1
+			}
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 1
+				}
+			}
+		}
+	]
+	translation	 0 1 1.1
+}
+
+#trần
+DEF	tran Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 2.5 0.2 3
+			}
+			appearance Appearance
+			{
+					texture	ImageTexture
+				{
+					url	["image/vang2.jpg"]
+				}
+			}
+		}
+	]
+	scale 1.2 1 1
+	translation	0 4.9 0
+}
+
+
+# can
+DEF	can Transform
+{
+	children
+	[
+		Inline {
+			url	["TranCan.wrl"]
+		}
+	]
+	scale 0.5 0.5 1.4
+	rotation 0 1 0 1.57
+	translation	0 4.2 0.5
+}
+
+#tru
+DEF	tru Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				height 3.0
+        		radius 1.2
+        		bottom TRUE
+        		top TRUE
+        		side TRUE
+			}
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/Richmond-Armour.jpg"]
+				}
+			}
+		}
+	]
+	rotation	0 0 1 1.57
+	translation	0 4.5 -0.5
+}
+
+#control
+
+Transform
+{
+	children
+	[
+		Inline {
+			url	["ControlPanel.wrl"]
+		}
+	]
+	translation	0 3.4 0.3
+}
+
+# dut the
+Transform
+{
+	children
+	[
+		Inline {
+			url	["DutThe.wrl"]
+		}
+	]
+	translation	 0.7 1.4 1.25
+}

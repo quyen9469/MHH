@@ -1,0 +1,359 @@
+#VRML V2.0 utf8
+
+#nen
+Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 1 1 0.01
+			}
+			appearance Appearance
+			{
+				material Material
+				{
+					ambientIntensity 1
+				}
+			}
+		}
+	]
+	translation	0 0 0.01
+}
+
+# ban phim so
+#5
+DEF	nut Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 0.3 0.3 0.03
+			}
+			appearance Appearance
+			{
+				material Material
+				{
+					emissiveColor 9 0 0
+				}
+			}
+		}
+	]
+	translation	-0.35 0.35 0.03
+}
+
+#6
+Transform
+{
+	children [USE nut]
+	translation	0.35 0 0
+}
+Transform
+{
+	children [USE nut ]
+	translation	0.7 0 0
+}
+Transform
+{
+	children [USE nut ]
+	translation	0 -0.35 0
+}
+Transform
+{
+	children [USE nut ]
+	translation	0 -0.7 0
+}
+Transform
+{
+	children [USE nut ]
+	translation	0.35 -0.35 0
+}
+Transform
+{
+	children [USE nut ]
+	translation	0.7 -0.35 0
+}
+Transform
+{
+	children [USE nut]
+	translation	0.35 -0.7 0
+}
+Transform
+{
+	children [USE nut ]
+	translation	0.7 -0.7 0
+}
+
+DEF nutchucnang Transform
+{
+	children [USE nut ]
+	translation	1.26 0 0
+	scale 1 0.7 1
+}
+
+Transform
+{
+	children
+	[
+		USE	nutchucnang
+	]
+	translation	0 -0.3 0
+}
+
+#5
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/5.png"]
+				}
+			}
+		} 
+	]	
+}
+
+#6
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/6.png"]
+				}
+			}
+		} 
+	]
+	translation	0.35 0 0	
+}
+
+#3
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/3.png"]
+				}
+			}
+		} 
+	]
+	translation	0.35 0.35 0	
+}
+
+#9
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/9.png"]
+				}
+			}
+		} 
+	]
+	translation	0.35 -0.35 0	
+}
+
+#2
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/2.png"]
+				}
+			}
+		} 
+	]
+	translation	0 0.35 0	
+}
+
+#8
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/8.png"]
+				}
+			}
+		} 
+	]
+	translation	0 -0.35 0	
+}
+
+#4
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/4.png"]
+				}
+			}
+		} 
+	]
+	translation	-0.35 0 0	
+}
+
+#1
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/1.png"]
+				}
+			}
+		} 
+	]
+	translation	-0.35 0.35 0	
+}
+#7
+Transform
+{
+	children 
+	[
+		Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/7.png"]
+				}
+			}
+		} 
+	]
+	translation	-0.35 -0.35 0	
+}
+
+#calcel
+Transform
+{
+	children 
+	[
+		 	Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/calcel.png"]
+				}
+			}
+		}
+    ]
+	translation	0.9 -0.05 0
+	scale 1 0.7 1
+}
+
+#ok
+Transform
+{
+	children 
+	[
+		 	Shape 
+		{
+			geometry Box
+			{
+				size 0.2 0.2 0.1
+			}
+				appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/okok.png"]
+				}
+			}
+		}
+    ]
+	translation	0.9 0.25 0
+	scale 1 0.7 1
+}

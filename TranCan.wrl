@@ -1,0 +1,92 @@
+#VRML V2.0 utf8
+
+Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 5 0.2 2.5
+			}
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/vangthat.jpg"]
+				}
+			}
+		}
+	]
+
+	rotation 0 0 -1 0.95
+}
+
+Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 2 0.2 2.5
+			}
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/vangthat.jpg"]
+				}
+			}
+		}
+	]
+	translation	-2.36 1.985 0			
+}
+
+Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 1 0.2 2.5
+			}
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/vangthat.jpg"]
+				}
+			}
+		}
+	]
+	translation	1.86 -1.985 0			
+}
+
+Transform
+{
+	children
+	[
+		Shape
+		{
+			geometry Box
+			{
+				size 3 0.2 2.5
+			}
+			appearance Appearance
+			{
+				texture	ImageTexture
+				{
+					url	["image/vangthat.jpg"]
+				}
+			}
+		}
+	]
+
+	rotation 0 0 1 0.95
+	translation	3.1 -0.8 0
+}
